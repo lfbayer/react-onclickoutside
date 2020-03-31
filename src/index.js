@@ -138,6 +138,7 @@ export default function onClickOutsideHOC(WrappedComponent, config) {
      */
     componentWillUnmount() {
       this.disableOnClickOutside();
+      this.componentNode = null;
     }
 
     /**

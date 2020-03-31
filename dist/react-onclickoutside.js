@@ -323,6 +323,7 @@ function onClickOutsideHOC(WrappedComponent, config) {
 
     _proto.componentWillUnmount = function componentWillUnmount() {
       this.disableOnClickOutside();
+      this.componentNode = null;
     };
     /**
      * Can be called to explicitly enable event listening
